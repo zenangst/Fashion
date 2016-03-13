@@ -1,6 +1,3 @@
-/// Convenience protocol for all types that could be styled.
-public protocol Styleable {}
-
 /// Stylization closure wrapper.
 final class Style<T: Styleable> {
 
