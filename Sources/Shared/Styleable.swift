@@ -3,11 +3,13 @@ public protocol Styleable {}
 
 public extension Styleable {
 
-  public func style<T: Styleable>(stylization: T -> Void) -> Self {
-    let style = Style(process: stylization)
+  /**
+   Applies a stylization closure.
 
-    style.applyTo(self)
-
+   - Parameter stylization: Closure where you can apply styles.
+   */
+  public func stylize(stylization: Self -> Void) -> Self {
+    stylization(self)
     return self
   }
 }
