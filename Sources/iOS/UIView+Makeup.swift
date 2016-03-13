@@ -8,10 +8,20 @@ public extension UIView {
     static var Style = "makeup_StyleAssociatedKey"
   }
 
+  /**
+   Applies previously registered styles.
+
+   - Parameter styles: Set of style names.
+   */
   public func stylize(styles: String...) {
     Stylist.master.apply(styles, model: self)
   }
 
+  /**
+   Applies previously registered styles.
+
+   - Parameter styles: Single style or multiple styles separated by whitespace.
+   */
   @IBInspectable public var style: String? {
     get {
       return objc_getAssociatedObject(self, &AssociatedKeys.Style) as? String
