@@ -19,3 +19,7 @@ struct TestStylesheet: Stylesheet {
     })
   }
 }
+
+class Button: UIButton {
+  
+}

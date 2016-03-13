@@ -1,8 +1,6 @@
 import UIKit
 
-extension UIView: Styleable {}
-
-public extension UIView {
+extension UIView: Styleable {
 
   private struct AssociatedKeys {
     static var Style = "makeup_StyleAssociatedKey"

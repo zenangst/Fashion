@@ -1,3 +1,5 @@
+import Foundation
+
 /// Style keeper, resolver and manager.
 public class Stylist {
 
@@ -33,9 +35,24 @@ public class Stylist {
 
     style(model: model)
   }
+
+  func applyShared(model: Styleable) -> Void {
+    var type: AnyClass = model.dynamicType
+    var typeHierarchy = [type]
+
+    while let superclass = class_getSuperclass(type) {
+      type = superclass
+      typeHierarchy.insert(type, atIndex: 0)
+    }
+
+    for modelType in typeHierarchy {
+      guard let style = sharedStyles[String(modelType)] else { continue }
+      style(model: model)
+    }
+  }
 }
 
-// MARK: - StyleRegistering
+// MARK: - StyleManaging
 
 extension Stylist: StyleManaging {
 
@@ -52,22 +69,34 @@ extension Stylist: StyleManaging {
     styles[name] = style.applyTo
   }
 
+  /**
+   Unregisters stylization closure with the specified name.
+
+   - Parameter name: The name of the style you want to unregister.
+   */
+  public func unregister(name: String) {
+    styles.removeValueForKey(name)
+  }
+
+  /**
+   Registers stylization closure on type label.
+   The style will be shared across all objects of this type, considering inheritance.
+   Type used in the closure should conform to `Styleable` protocol
+
+   - Parameter stylization: Closure where you can apply styles.
+   */
   public func share<T: Styleable>(stylization: T -> Void) {
     let style = Style(process: stylization)
 
     sharedStyles[String(T.self)] = style.applyTo
   }
 
+  /**
+   Unregisters shared stylization closure for the specified type.
+
+   - Parameter type: The type you want to unregister.
+   */
   public func unshare<T: Styleable>(type: T.Type) {
     sharedStyles.removeValueForKey(String(type))
-  }
-
-  /**
-   Unregisters stylization closure with the specified name.
-
-   - Parameter name: The name of the style you can apply to your view afterwards.
-   */
-  public func unregister(name: String) {
-    styles.removeValueForKey(name)
   }
 }

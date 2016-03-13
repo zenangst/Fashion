@@ -7,6 +7,8 @@ public protocol Stylesheet: StyleManaging {
   func define()
 }
 
+// MARK: - StyleManaging
+
 public extension Stylesheet {
 
   /**
@@ -23,9 +25,29 @@ public extension Stylesheet {
   /**
    Unregisters stylization closure with the specified name.
 
-   - Parameter name: The name of the style you can apply to your view afterwards.
+   - Parameter name: The name of the style you want to unregister.
    */
   public func unregister(name: String) {
     Stylist.master.unregister(name)
+  }
+
+  /**
+   Registers stylization closure on type label.
+   The style will be shared across all objects of this type, considering inheritance.
+   Type used in the closure should conform to `Styleable` protocol
+
+   - Parameter stylization: Closure where you can apply styles.
+   */
+  public func share<T: Styleable>(stylization: T -> Void) {
+    Stylist.master.share(stylization)
+  }
+
+  /**
+   Unregisters shared stylization closure for the specified type.
+
+   - Parameter type: The type you want to unregister.
+   */
+  public func unshare<T: Styleable>(type: T.Type) {
+    Stylist.master.unshare(type)
   }
 }

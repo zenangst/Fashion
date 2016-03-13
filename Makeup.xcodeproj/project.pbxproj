@@ -18,21 +18,23 @@
 		D52158781C95B369004EE4BE /* Makeup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158761C95B369004EE4BE /* Makeup.swift */; };
 		D521588D1C95CBFC004EE4BE /* Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521588C1C95CBFC004EE4BE /* Styleable.swift */; };
 		D521588E1C95CBFC004EE4BE /* Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521588C1C95CBFC004EE4BE /* Styleable.swift */; };
-		D54B58031C95DB4D0029F7BC /* Stylesheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B57EE1C95DB2E0029F7BC /* Stylesheets.swift */; };
+		D54B58031C95DB4D0029F7BC /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B57EE1C95DB2E0029F7BC /* TestHelpers.swift */; };
 		D54B58041C95DB4D0029F7BC /* MakeupSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B57EF1C95DB2E0029F7BC /* MakeupSpec.swift */; };
 		D54B58051C95DB4D0029F7BC /* StyleableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B57F01C95DB2E0029F7BC /* StyleableSpec.swift */; };
 		D54B58061C95DB4D0029F7BC /* StylesheetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B57F11C95DB2E0029F7BC /* StylesheetSpec.swift */; };
 		D54B58071C95DB4D0029F7BC /* StyleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B57F21C95DB2E0029F7BC /* StyleSpec.swift */; };
 		D54B58081C95DB4D0029F7BC /* StylistSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B57F31C95DB2E0029F7BC /* StylistSpec.swift */; };
-		D54B58091C95DB4D0029F7BC /* UIViewMakeupSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629931C3A8BDA007F7B7C /* UIViewMakeupSpec.swift */; };
-		D54B580A1C95DB4D0029F7BC /* StylesheetUIAppearanceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158951C95CF42004EE4BE /* StylesheetUIAppearanceSpec.swift */; };
+		D54B58091C95DB4D0029F7BC /* UIView+StyleableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629931C3A8BDA007F7B7C /* UIView+StyleableSpec.swift */; };
+		D54B580A1C95DB4D0029F7BC /* Stylesheet+UIAppearanceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158951C95CF42004EE4BE /* Stylesheet+UIAppearanceSpec.swift */; };
+		D54B580D1C95DCA80029F7BC /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54B580C1C95DCA80029F7BC /* Sugar.framework */; };
+		D54B580F1C95DCF90029F7BC /* UIView+SharedStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B580E1C95DCF90029F7BC /* UIView+SharedStyles.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* Makeup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Makeup.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* Makeup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Makeup.framework */; };
 		D5C629771C3A878E007F7B7C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629751C3A878E007F7B7C /* Quick.framework */; };
 		D5C629781C3A878E007F7B7C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629761C3A878E007F7B7C /* Nimble.framework */; };
 		D5C6297B1C3A879F007F7B7C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629791C3A879F007F7B7C /* Quick.framework */; };
 		D5C6297C1C3A879F007F7B7C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C6297A1C3A879F007F7B7C /* Nimble.framework */; };
-		D5C629831C3A892A007F7B7C /* UIView+Makeup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629821C3A892A007F7B7C /* UIView+Makeup.swift */; };
+		D5C629831C3A892A007F7B7C /* UIView+Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629821C3A892A007F7B7C /* UIView+Styleable.swift */; };
 		D5C629851C3A893F007F7B7C /* NSView+Makeup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629841C3A893F007F7B7C /* NSView+Makeup.swift */; };
 		D5C629871C3A89A8007F7B7C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629861C3A89A8007F7B7C /* Style.swift */; };
 		D5C629881C3A89A8007F7B7C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629861C3A89A8007F7B7C /* Style.swift */; };
@@ -64,13 +66,15 @@
 		D52158731C95B117004EE4BE /* StyleManaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManaging.swift; sourceTree = "<group>"; };
 		D52158761C95B369004EE4BE /* Makeup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Makeup.swift; sourceTree = "<group>"; };
 		D521588C1C95CBFC004EE4BE /* Styleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styleable.swift; sourceTree = "<group>"; };
-		D52158951C95CF42004EE4BE /* StylesheetUIAppearanceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylesheetUIAppearanceSpec.swift; sourceTree = "<group>"; };
-		D54B57EE1C95DB2E0029F7BC /* Stylesheets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylesheets.swift; sourceTree = "<group>"; };
+		D52158951C95CF42004EE4BE /* Stylesheet+UIAppearanceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stylesheet+UIAppearanceSpec.swift"; sourceTree = "<group>"; };
+		D54B57EE1C95DB2E0029F7BC /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		D54B57EF1C95DB2E0029F7BC /* MakeupSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeupSpec.swift; sourceTree = "<group>"; };
 		D54B57F01C95DB2E0029F7BC /* StyleableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleableSpec.swift; sourceTree = "<group>"; };
 		D54B57F11C95DB2E0029F7BC /* StylesheetSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylesheetSpec.swift; sourceTree = "<group>"; };
 		D54B57F21C95DB2E0029F7BC /* StyleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleSpec.swift; sourceTree = "<group>"; };
 		D54B57F31C95DB2E0029F7BC /* StylistSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylistSpec.swift; sourceTree = "<group>"; };
+		D54B580C1C95DCA80029F7BC /* Sugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sugar.framework; path = Carthage/Build/iOS/Sugar.framework; sourceTree = "<group>"; };
+		D54B580E1C95DCF90029F7BC /* UIView+SharedStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SharedStyles.swift"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Makeup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Makeup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* Makeup-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Makeup-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C629401C3A7FAA007F7B7C /* Makeup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Makeup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,14 +83,14 @@
 		D5C629761C3A878E007F7B7C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		D5C629791C3A879F007F7B7C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
 		D5C6297A1C3A879F007F7B7C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
-		D5C629821C3A892A007F7B7C /* UIView+Makeup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Makeup.swift"; sourceTree = "<group>"; };
+		D5C629821C3A892A007F7B7C /* UIView+Styleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Styleable.swift"; sourceTree = "<group>"; };
 		D5C629841C3A893F007F7B7C /* NSView+Makeup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Makeup.swift"; sourceTree = "<group>"; };
 		D5C629861C3A89A8007F7B7C /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		D5C6298B1C3A8BBD007F7B7C /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D5C6298C1C3A8BBD007F7B7C /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
 		D5C629901C3A8BDA007F7B7C /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D5C629911C3A8BDA007F7B7C /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
-		D5C629931C3A8BDA007F7B7C /* UIViewMakeupSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewMakeupSpec.swift; sourceTree = "<group>"; };
+		D5C629931C3A8BDA007F7B7C /* UIView+StyleableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+StyleableSpec.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D54B580D1C95DCA80029F7BC /* Sugar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +135,7 @@
 		D52158721C95B0AE004EE4BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D54B580C1C95DCA80029F7BC /* Sugar.framework */,
 				D5C629791C3A879F007F7B7C /* Quick.framework */,
 				D5C6297A1C3A879F007F7B7C /* Nimble.framework */,
 				D5C629751C3A878E007F7B7C /* Quick.framework */,
@@ -150,7 +156,7 @@
 		D54B57ED1C95DB2E0029F7BC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				D54B57EE1C95DB2E0029F7BC /* Stylesheets.swift */,
+				D54B57EE1C95DB2E0029F7BC /* TestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -201,7 +207,8 @@
 		D5C6296A1C3A809D007F7B7C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D5C629821C3A892A007F7B7C /* UIView+Makeup.swift */,
+				D5C629821C3A892A007F7B7C /* UIView+Styleable.swift */,
+				D54B580E1C95DCF90029F7BC /* UIView+SharedStyles.swift */,
 				D521586D1C949EF5004EE4BE /* Stylesheet+UIAppearance.swift */,
 			);
 			path = iOS;
@@ -246,8 +253,8 @@
 				D54B57F11C95DB2E0029F7BC /* StylesheetSpec.swift */,
 				D54B57F21C95DB2E0029F7BC /* StyleSpec.swift */,
 				D54B57F31C95DB2E0029F7BC /* StylistSpec.swift */,
-				D5C629931C3A8BDA007F7B7C /* UIViewMakeupSpec.swift */,
-				D52158951C95CF42004EE4BE /* StylesheetUIAppearanceSpec.swift */,
+				D5C629931C3A8BDA007F7B7C /* UIView+StyleableSpec.swift */,
+				D52158951C95CF42004EE4BE /* Stylesheet+UIAppearanceSpec.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -280,6 +287,7 @@
 				D5B2E89B1C3A780C00C0327D /* Frameworks */,
 				D5B2E89C1C3A780C00C0327D /* Headers */,
 				D5B2E89D1C3A780C00C0327D /* Resources */,
+				D54B580B1C95DC3D0029F7BC /* Copy frameworks with Carthage */,
 			);
 			buildRules = (
 			);
@@ -422,6 +430,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		D54B580B1C95DC3D0029F7BC /* Copy frameworks with Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Sugar.framework",
+			);
+			name = "Copy frameworks with Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		D5C629731C3A86E3007F7B7C /* Copy frameworks with Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -461,11 +484,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C629831C3A892A007F7B7C /* UIView+Makeup.swift in Sources */,
+				D5C629831C3A892A007F7B7C /* UIView+Styleable.swift in Sources */,
 				D5C629871C3A89A8007F7B7C /* Style.swift in Sources */,
 				D52158701C94A444004EE4BE /* Stylist.swift in Sources */,
 				D52158741C95B117004EE4BE /* StyleManaging.swift in Sources */,
 				D52158771C95B369004EE4BE /* Makeup.swift in Sources */,
+				D54B580F1C95DCF90029F7BC /* UIView+SharedStyles.swift in Sources */,
 				D52158681C948CE2004EE4BE /* Stylesheet.swift in Sources */,
 				D521586E1C949EF5004EE4BE /* Stylesheet+UIAppearance.swift in Sources */,
 				D521588D1C95CBFC004EE4BE /* Styleable.swift in Sources */,
@@ -477,10 +501,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D54B58061C95DB4D0029F7BC /* StylesheetSpec.swift in Sources */,
-				D54B58091C95DB4D0029F7BC /* UIViewMakeupSpec.swift in Sources */,
-				D54B58031C95DB4D0029F7BC /* Stylesheets.swift in Sources */,
+				D54B58091C95DB4D0029F7BC /* UIView+StyleableSpec.swift in Sources */,
+				D54B58031C95DB4D0029F7BC /* TestHelpers.swift in Sources */,
 				D54B58041C95DB4D0029F7BC /* MakeupSpec.swift in Sources */,
-				D54B580A1C95DB4D0029F7BC /* StylesheetUIAppearanceSpec.swift in Sources */,
+				D54B580A1C95DB4D0029F7BC /* Stylesheet+UIAppearanceSpec.swift in Sources */,
 				D54B58081C95DB4D0029F7BC /* StylistSpec.swift in Sources */,
 				D54B58071C95DB4D0029F7BC /* StyleSpec.swift in Sources */,
 				D54B58051C95DB4D0029F7BC /* StyleableSpec.swift in Sources */,
@@ -621,6 +645,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Makeup/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -640,6 +668,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Makeup/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
