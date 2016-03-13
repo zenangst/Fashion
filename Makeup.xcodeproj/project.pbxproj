@@ -18,12 +18,14 @@
 		D52158781C95B369004EE4BE /* Makeup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158761C95B369004EE4BE /* Makeup.swift */; };
 		D521587A1C95B3F5004EE4BE /* StylesheetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158791C95B3F5004EE4BE /* StylesheetSpec.swift */; };
 		D521587B1C95B3F5004EE4BE /* StylesheetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158791C95B3F5004EE4BE /* StylesheetSpec.swift */; };
-		D52158811C95B947004EE4BE /* TestStylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521587E1C95B944004EE4BE /* TestStylesheet.swift */; };
-		D52158821C95B948004EE4BE /* TestStylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521587E1C95B944004EE4BE /* TestStylesheet.swift */; };
+		D52158811C95B947004EE4BE /* Stylesheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521587E1C95B944004EE4BE /* Stylesheets.swift */; };
+		D52158821C95B948004EE4BE /* Stylesheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521587E1C95B944004EE4BE /* Stylesheets.swift */; };
 		D52158841C95BE06004EE4BE /* StyleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158831C95BE06004EE4BE /* StyleSpec.swift */; };
 		D52158851C95BE06004EE4BE /* StyleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158831C95BE06004EE4BE /* StyleSpec.swift */; };
 		D52158871C95C15C004EE4BE /* StylistSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158861C95C15C004EE4BE /* StylistSpec.swift */; };
 		D52158881C95C15C004EE4BE /* StylistSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158861C95C15C004EE4BE /* StylistSpec.swift */; };
+		D521588A1C95C8FE004EE4BE /* MakeupSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158891C95C8FE004EE4BE /* MakeupSpec.swift */; };
+		D521588B1C95C8FE004EE4BE /* MakeupSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158891C95C8FE004EE4BE /* MakeupSpec.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* Makeup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Makeup.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* Makeup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Makeup.framework */; };
 		D5C629771C3A878E007F7B7C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629751C3A878E007F7B7C /* Quick.framework */; };
@@ -64,9 +66,10 @@
 		D52158731C95B117004EE4BE /* StyleManaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManaging.swift; sourceTree = "<group>"; };
 		D52158761C95B369004EE4BE /* Makeup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Makeup.swift; sourceTree = "<group>"; };
 		D52158791C95B3F5004EE4BE /* StylesheetSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylesheetSpec.swift; sourceTree = "<group>"; };
-		D521587E1C95B944004EE4BE /* TestStylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStylesheet.swift; sourceTree = "<group>"; };
+		D521587E1C95B944004EE4BE /* Stylesheets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylesheets.swift; sourceTree = "<group>"; };
 		D52158831C95BE06004EE4BE /* StyleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleSpec.swift; sourceTree = "<group>"; };
 		D52158861C95C15C004EE4BE /* StylistSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylistSpec.swift; sourceTree = "<group>"; };
+		D52158891C95C8FE004EE4BE /* MakeupSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeupSpec.swift; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Makeup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Makeup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* Makeup-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Makeup-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C629401C3A7FAA007F7B7C /* Makeup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Makeup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,7 +150,7 @@
 		D521587D1C95B911004EE4BE /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				D521587E1C95B944004EE4BE /* TestStylesheet.swift */,
+				D521587E1C95B944004EE4BE /* Stylesheets.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				D52158791C95B3F5004EE4BE /* StylesheetSpec.swift */,
 				D52158831C95BE06004EE4BE /* StyleSpec.swift */,
 				D52158861C95C15C004EE4BE /* StylistSpec.swift */,
+				D52158891C95C8FE004EE4BE /* MakeupSpec.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -485,11 +489,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D52158811C95B947004EE4BE /* TestStylesheet.swift in Sources */,
+				D52158811C95B947004EE4BE /* Stylesheets.swift in Sources */,
 				D52158871C95C15C004EE4BE /* StylistSpec.swift in Sources */,
 				D5C6299D1C3A8C6B007F7B7C /* iOSSpec.swift in Sources */,
 				D52158841C95BE06004EE4BE /* StyleSpec.swift in Sources */,
 				D521587A1C95B3F5004EE4BE /* StylesheetSpec.swift in Sources */,
+				D521588A1C95C8FE004EE4BE /* MakeupSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,11 +515,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D52158821C95B948004EE4BE /* TestStylesheet.swift in Sources */,
+				D52158821C95B948004EE4BE /* Stylesheets.swift in Sources */,
 				D52158881C95C15C004EE4BE /* StylistSpec.swift in Sources */,
 				D5C6299B1C3A8BDA007F7B7C /* MacSpec.swift in Sources */,
 				D52158851C95BE06004EE4BE /* StyleSpec.swift in Sources */,
 				D521587B1C95B3F5004EE4BE /* StylesheetSpec.swift in Sources */,
+				D521588B1C95C8FE004EE4BE /* MakeupSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

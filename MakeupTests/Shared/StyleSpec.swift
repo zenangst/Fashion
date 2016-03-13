@@ -10,14 +10,14 @@ class StyleSpec: QuickSpec {
       beforeEach {
         Stylist.master.styles.removeAll()
 
-        style = Style<UILabel>(process: { (label: UILabel) in
+        style = Style<UILabel>{ label in
           label.backgroundColor = UIColor.whiteColor()
           label.textColor = UIColor.redColor()
           label.numberOfLines = 10
-        })
+        }
       }
 
-      describe("applyTo: model") {
+      describe("#applyTo:model") {
         context("when the model is of expected type") {
           it("applies the style to the passed model") {
             let label = UILabel()
