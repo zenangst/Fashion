@@ -1,7 +1,14 @@
-import Foundation
+#if os(iOS)
+  import UIKit
+
+  public protocol Styleable: UIAppearance {}
+#elseif os(OSX)
+  import Foundation
+
+  public protocol Styleable: NSObjectProtocol {}
+#endif
 
 /// Convenience protocol for all types that could be styled.
-public protocol Styleable: NSObjectProtocol {}
 
 public extension Styleable {
 

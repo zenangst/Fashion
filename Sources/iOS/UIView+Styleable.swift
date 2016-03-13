@@ -12,7 +12,14 @@ extension UIView: Styleable {
    - Parameter styles: Set of style names.
    */
   public func stylize(styles: String...) {
-    Stylist.master.apply(styles, model: self)
+    style = styles.joinWithSeparator(" ")
+  }
+
+  /**
+   Inherits registered shared styles.
+   */
+  public func inheritStyles() {
+    Stylist.master.applyShared(self)
   }
 
   /**

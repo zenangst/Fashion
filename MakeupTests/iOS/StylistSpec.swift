@@ -179,7 +179,6 @@ class StylistSpec: QuickSpec {
       }
 
       describe("#unshare") {
-
         it("unregisters shared stylization closure for the specified type") {
           stylist.share { (button: UIButton) in
             button.backgroundColor = UIColor.redColor()

@@ -3,9 +3,13 @@ import Sugar
 
 extension UIView {
 
+  private struct AssociatedKeys {
+    static var stylesApplied = "makeup_StylesAppliedAssociatedKey"
+  }
+
   // MARK: - Method Swizzling
 
-  public override class func initialize() {
+  override public class func initialize() {
     struct Static {
       static var token: dispatch_once_t = 0
     }
@@ -13,22 +17,35 @@ extension UIView {
     if self !== UIView.self { return }
 
     dispatch_once(&Static.token) {
-      Swizzler.swizzle("initWithFrame:", cls: self, prefix: "makeup")
-      Swizzler.swizzle("initWithCoder:", cls: self, prefix: "makeup")
+      Swizzler.swizzle("willMoveToSuperview:", cls: self, prefix: "makeup")
     }
   }
 
-  func makeup_init(frame frame: CGRect) -> UIView {
-    let instance = makeup_init(frame: frame)
-    Stylist.master.applyShared(self)
+  func makeup_willMoveToSuperview(newSuperview: UIView?) {
+    makeup_willMoveToSuperview(newSuperview)
 
-    return instance
+    guard runtimeStyles else {
+      return
+    }
+
+    guard Stylist.master.applyShared(self) && stylesApplied != true else {
+      return
+    }
+
+    stylesApplied = true
+
+    if let style = style {
+      self.style = style
+    }
   }
 
-  func makeup_init(coder aDecoder: NSCoder) -> UIView {
-    let instance = makeup_init(coder: aDecoder)
-    Stylist.master.applyShared(self)
-
-    return instance
+  private var stylesApplied: Bool? {
+    get {
+      return objc_getAssociatedObject(self, &AssociatedKeys.stylesApplied) as? Bool
+    }
+    set (newValue) {
+      objc_setAssociatedObject(self, &AssociatedKeys.stylesApplied,
+        newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+    }
   }
 }

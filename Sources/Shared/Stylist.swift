@@ -36,7 +36,13 @@ public class Stylist {
     style(model: model)
   }
 
-  func applyShared(model: Styleable) -> Void {
+  /**
+   Applies shared stylization closures, considering inheritance.
+
+   - Parameter model: `Styleable` view/model.
+   */
+  func applyShared(model: Styleable) -> Bool {
+    var resolved = false
     var type: AnyClass = model.dynamicType
     var typeHierarchy = [type]
 
@@ -47,8 +53,12 @@ public class Stylist {
 
     for modelType in typeHierarchy {
       guard let style = sharedStyles[String(modelType)] else { continue }
+
       style(model: model)
+      resolved = true
     }
+
+    return resolved
   }
 }
 
@@ -79,7 +89,7 @@ extension Stylist: StyleManaging {
   }
 
   /**
-   Registers stylization closure on type label.
+   Registers stylization closure on type level.
    The style will be shared across all objects of this type, considering inheritance.
    Type used in the closure should conform to `Styleable` protocol
 

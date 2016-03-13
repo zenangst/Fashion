@@ -21,5 +21,8 @@ struct TestStylesheet: Stylesheet {
 }
 
 class Button: UIButton {
-  
+  override var backgroundColor: UIColor? {
+    didSet {
+    }
+  }
 }

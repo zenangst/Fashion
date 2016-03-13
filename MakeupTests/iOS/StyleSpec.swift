@@ -10,6 +10,7 @@ class StyleSpec: QuickSpec {
 
       beforeEach {
         Stylist.master.styles.removeAll()
+        Stylist.master.sharedStyles.removeAll()
 
         style = Style<UILabel>{ label in
           label.backgroundColor = UIColor.whiteColor()

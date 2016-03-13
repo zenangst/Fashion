@@ -28,6 +28,7 @@
 		D54B580A1C95DB4D0029F7BC /* Stylesheet+UIAppearanceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158951C95CF42004EE4BE /* Stylesheet+UIAppearanceSpec.swift */; };
 		D54B580D1C95DCA80029F7BC /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54B580C1C95DCA80029F7BC /* Sugar.framework */; };
 		D54B580F1C95DCF90029F7BC /* UIView+SharedStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B580E1C95DCF90029F7BC /* UIView+SharedStyles.swift */; };
+		D54B58141C95F0D00029F7BC /* UIView+SharedStylesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B58131C95F0D00029F7BC /* UIView+SharedStylesSpec.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* Makeup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Makeup.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* Makeup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Makeup.framework */; };
 		D5C629771C3A878E007F7B7C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629751C3A878E007F7B7C /* Quick.framework */; };
@@ -75,6 +76,7 @@
 		D54B57F31C95DB2E0029F7BC /* StylistSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylistSpec.swift; sourceTree = "<group>"; };
 		D54B580C1C95DCA80029F7BC /* Sugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sugar.framework; path = Carthage/Build/iOS/Sugar.framework; sourceTree = "<group>"; };
 		D54B580E1C95DCF90029F7BC /* UIView+SharedStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SharedStyles.swift"; sourceTree = "<group>"; };
+		D54B58131C95F0D00029F7BC /* UIView+SharedStylesSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SharedStylesSpec.swift"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Makeup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Makeup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* Makeup-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Makeup-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C629401C3A7FAA007F7B7C /* Makeup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Makeup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -248,13 +250,14 @@
 			isa = PBXGroup;
 			children = (
 				D54B57ED1C95DB2E0029F7BC /* Helpers */,
-				D54B57EF1C95DB2E0029F7BC /* MakeupSpec.swift */,
-				D54B57F01C95DB2E0029F7BC /* StyleableSpec.swift */,
-				D54B57F11C95DB2E0029F7BC /* StylesheetSpec.swift */,
-				D54B57F21C95DB2E0029F7BC /* StyleSpec.swift */,
-				D54B57F31C95DB2E0029F7BC /* StylistSpec.swift */,
 				D5C629931C3A8BDA007F7B7C /* UIView+StyleableSpec.swift */,
+				D54B58131C95F0D00029F7BC /* UIView+SharedStylesSpec.swift */,
 				D52158951C95CF42004EE4BE /* Stylesheet+UIAppearanceSpec.swift */,
+				D54B57F01C95DB2E0029F7BC /* StyleableSpec.swift */,
+				D54B57F21C95DB2E0029F7BC /* StyleSpec.swift */,
+				D54B57F11C95DB2E0029F7BC /* StylesheetSpec.swift */,
+				D54B57F31C95DB2E0029F7BC /* StylistSpec.swift */,
+				D54B57EF1C95DB2E0029F7BC /* MakeupSpec.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				D54B58031C95DB4D0029F7BC /* TestHelpers.swift in Sources */,
 				D54B58041C95DB4D0029F7BC /* MakeupSpec.swift in Sources */,
 				D54B580A1C95DB4D0029F7BC /* Stylesheet+UIAppearanceSpec.swift in Sources */,
+				D54B58141C95F0D00029F7BC /* UIView+SharedStylesSpec.swift in Sources */,
 				D54B58081C95DB4D0029F7BC /* StylistSpec.swift in Sources */,
 				D54B58071C95DB4D0029F7BC /* StyleSpec.swift in Sources */,
 				D54B58051C95DB4D0029F7BC /* StyleableSpec.swift in Sources */,

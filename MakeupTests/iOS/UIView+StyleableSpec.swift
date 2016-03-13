@@ -10,6 +10,7 @@ class UIViewMakeupSpec: QuickSpec {
 
       beforeEach {
         Stylist.master.styles.removeAll()
+        Stylist.master.sharedStyles.removeAll()
 
         label = UILabel()
         label.backgroundColor = UIColor.redColor()

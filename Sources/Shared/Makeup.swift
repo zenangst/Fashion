@@ -9,3 +9,8 @@ public func register(stylesheets: [Stylesheet]) {
     $0.define()
   }
 }
+
+/**
+Must be set to `true` to get shared styles working automatically.
+*/
+public var runtimeStyles = true

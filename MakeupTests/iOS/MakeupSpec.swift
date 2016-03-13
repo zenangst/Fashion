@@ -10,6 +10,7 @@ class MakeupSpec: QuickSpec {
 
       beforeEach {
         Stylist.master.styles.removeAll()
+        Stylist.master.sharedStyles.removeAll()
       }
 
       describe("#register") {
