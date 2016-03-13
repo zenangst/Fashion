@@ -1,16 +1,12 @@
 public class Stylist {
 
-  static let shared = Stylist()
+  public static let master = Stylist()
 
   typealias Stylization = (model: Styleable) -> Void
 
   var styles: [String: Stylization] = [:]
 
-  public func register<T: Styleable>(name: String, stylization: T -> Void) {
-    let style = Style(process: stylization)
-
-    styles[name] = style.applyTo
-  }
+  // MARK: - Apply styles
 
   func apply(styles: [String], model: Styleable) -> Void {
     for style in styles {
@@ -22,5 +18,16 @@ public class Stylist {
     guard let style = styles[style] else { return }
 
     style(model: model)
+  }
+}
+
+// MARK: - StyleRegistering
+
+extension Stylist: StyleRegistering {
+
+  public func register<T: Styleable>(name: String, stylization: T -> Void) {
+    let style = Style(process: stylization)
+
+    styles[name] = style.applyTo
   }
 }

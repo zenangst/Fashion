@@ -1,11 +1,11 @@
-public protocol Stylesheet {
+public protocol Stylesheet: StyleRegistering {
 
-  func register<T: Styleable>(name: String, stylization: T -> Void)
+  func define()
 }
 
-extension Stylesheet {
+public extension Stylesheet {
 
   public func register<T: Styleable>(style: String, stylization: T -> Void) {
-    Stylist.shared.register(style, stylization: stylization)
+    Stylist.master.register(style, stylization: stylization)
   }
 }

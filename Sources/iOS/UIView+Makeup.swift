@@ -2,17 +2,17 @@ import UIKit
 
 extension UIView: Styleable {}
 
-extension UIView {
+public extension UIView {
 
   private struct AssociatedKeys {
     static var Style = "makeup_StyleAssociatedKey"
   }
 
-  func stylize(styles: String...) {
-    Stylist.shared.apply(styles, model: self)
+  public func stylize(styles: String...) {
+    Stylist.master.apply(styles, model: self)
   }
 
-  @IBInspectable var style: String? {
+  @IBInspectable public var style: String? {
     get {
       return objc_getAssociatedObject(self, &AssociatedKeys.Style) as? String
     }
@@ -22,7 +22,7 @@ extension UIView {
 
       if let newValue = newValue {
         let styles = newValue.componentsSeparatedByString(" ")
-        Stylist.shared.apply(styles, model: self)
+        Stylist.master.apply(styles, model: self)
       }
     }
   }
