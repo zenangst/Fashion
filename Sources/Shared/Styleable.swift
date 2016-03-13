@@ -1,5 +1,7 @@
+import Foundation
+
 /// Convenience protocol for all types that could be styled.
-public protocol Styleable {}
+public protocol Styleable: NSObjectProtocol {}
 
 public extension Styleable {
 

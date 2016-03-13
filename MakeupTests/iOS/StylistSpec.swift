@@ -3,6 +3,7 @@ import Nimble
 @testable import Makeup
 
 class StylistSpec: QuickSpec {
+
   override func spec() {
     describe("Stylist") {
       var stylist: Stylist!

@@ -5,6 +5,7 @@ public class Stylist {
 
   typealias Stylization = (model: Styleable) -> Void
 
+  var sharedStyles: [String: Stylization] = [:]
   var styles: [String: Stylization] = [:]
 
   // MARK: - Stylization
@@ -49,6 +50,16 @@ extension Stylist: StyleManaging {
     let style = Style(process: stylization)
 
     styles[name] = style.applyTo
+  }
+
+  public func share<T: Styleable>(stylization: T -> Void) {
+    let style = Style(process: stylization)
+
+    sharedStyles[String(T.self)] = style.applyTo
+  }
+
+  public func unshare<T: Styleable>(type: T.Type) {
+    sharedStyles.removeValueForKey(String(type))
   }
 
   /**

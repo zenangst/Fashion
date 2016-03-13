@@ -3,6 +3,7 @@ import Nimble
 @testable import Makeup
 
 class StyleableSpec: QuickSpec {
+
   override func spec() {
     describe("Styleable") {
       var label: UILabel!

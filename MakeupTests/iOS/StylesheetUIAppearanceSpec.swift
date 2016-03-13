@@ -1,9 +1,26 @@
-//
-//  StylesheetUIAppearanceSpec.swift
-//  Makeup
-//
-//  Created by Vadym Markov on 13/03/16.
-//  Copyright © 2016 Hyper Interaktiv AS. All rights reserved.
-//
+import Quick
+import Nimble
+@testable import Makeup
 
-import Foundation
+class StylesheetUIAppearanceSpec: QuickSpec {
+
+  override func spec() {
+    describe("Stylesheet+UIAppearanceSpec") {
+      let stylesheet = TestEmptyStylesheet()
+
+      beforeEach {
+        Stylist.master.styles.removeAll()
+      }
+
+      describe("#share") {
+        it("applies a stylization closure to UIAppearance context") {
+          stylesheet.shareAppearance({ (navigationBar: UINavigationBar) in
+            navigationBar.alpha = 0.5
+          })
+
+          expect(UINavigationBar.appearance().alpha).to(equal(0.5))
+        }
+      }
+    }
+  }
+}

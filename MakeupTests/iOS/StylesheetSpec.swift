@@ -3,6 +3,7 @@ import Nimble
 @testable import Makeup
 
 class StylesheetSpec: QuickSpec {
+
   override func spec() {
     describe("Stylesheet") {
       let stylesheet = TestEmptyStylesheet()
