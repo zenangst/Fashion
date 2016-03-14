@@ -1,4 +1,4 @@
-![Makeup](https://github.com/vadymmarkov/When/blob/master/Resources/MakeupPresentation.png)
+![Makeup](https://github.com/vadymmarkov/Makeup/blob/master/Resources/MakeupPresentation.png)
 
 [![CI Status](http://img.shields.io/travis/vadymmarkov/Makeup.svg?style=flat)](https://travis-ci.org/vadymmarkov/Makeup)
 [![Version](https://img.shields.io/cocoapods/v/Makeup.svg?style=flat)](http://cocoadocs.org/docsets/Makeup)
@@ -51,7 +51,7 @@ let button = UIButton()
 button.style = "red-button" // backgroundColor => UIColor.redColor()
 
 let label = UILabel()
-addSubview(label) // textColor => UIColor.blueColor() 
+addSubview(label) // textColor => UIColor.blueColor()
 ```
 
 ### Stylesheet
