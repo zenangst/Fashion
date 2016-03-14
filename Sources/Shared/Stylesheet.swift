@@ -40,6 +40,10 @@ public extension Stylesheet {
    */
   public func share<T: Styleable>(stylization: T -> Void) {
     Stylist.master.share(stylization)
+
+    #if os(iOS)
+      shareAppearance(stylization)
+    #endif
   }
 
   /**
