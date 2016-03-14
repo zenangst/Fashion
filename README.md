@@ -8,7 +8,7 @@
 
 ## Description
 
-**Makeup** is your helper to share and reuse view styles in a Swift way. The
+**Makeup** is your helper to share and reuse UI styles in a Swift way. The
 main goal is not to style your native apps in CSS, but use a set of convenience
 helper functions to decouple your styles from a layout code. Also here we try to
 go beyond the `UIAppearance` possibilities to customize appearance for all
