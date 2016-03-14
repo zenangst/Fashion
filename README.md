@@ -1,4 +1,4 @@
-# Makeup
+![Makeup](https://github.com/vadymmarkov/When/blob/master/Resources/MakeupPresentation.png)
 
 [![CI Status](http://img.shields.io/travis/vadymmarkov/Makeup.svg?style=flat)](https://travis-ci.org/vadymmarkov/Makeup)
 [![Version](https://img.shields.io/cocoapods/v/Makeup.svg?style=flat)](http://cocoadocs.org/docsets/Makeup)
@@ -8,12 +8,64 @@
 
 ## Description
 
-**Makeup** description.
+**Makeup** is your helper to share and reuse view styles in a Swift way. The
+main goal is not to style your native apps in CSS, but use a set of convenience
+helper functions to decouple your styles from a layout code. Also here we try to
+go beyond the `UIAppearance` possibilities to customize appearance for all
+instances objects of the specified type.
+
+## Table of Contents
+
+* [Usage](#usage)
+  * [Conventional way](#conventional-way)
+  * [Stylesheet](#stylesheet)
+  * [Stylist](#stylist)
+  * [UIView extensions](#uiview-extensions)
+* [Installation](#installation)
+* [Author](#author)
+* [Contributing](#contributing)
+* [License](#license)
 
 ## Usage
 
+### Conventional way
+
 ```swift
-<API>
+struct MainStylesheet: Stylesheet {
+
+  func define() {
+    share { (label: UILabel) in
+      label.textColor = UIColor.blueColor()
+    }
+
+    register("red-button", stylization: { (button: UIButton) in
+      button.backgroundColor = UIColor.redColor()
+    })
+  }
+}
+
+Makeup.register([MainStylesheet()])
+
+//...
+let button = UIButton()
+button.style = "red-button" // backgroundColor => UIColor.redColor()
+
+let label = UILabel()
+addSubview(label) // textColor => UIColor.blueColor() 
+```
+
+### Stylesheet
+```swift
+```
+
+### Stylist
+
+```swift
+```
+
+### UIView extensions
+
+```swift
 ```
 
 ## Author
