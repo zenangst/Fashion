@@ -1,7 +1,7 @@
 #if os(iOS)
   import UIKit
 
-  public protocol Styleable: UIAppearance {}
+  public typealias Styleable = UIAppearance
 #elseif os(OSX)
   import Foundation
 
