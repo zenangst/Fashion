@@ -8,7 +8,7 @@ before_install:
 - carthage update --platform iOS,Mac
 
 script:
-- xctool clean build -project Makeup.xcodeproj -scheme Makeup-iOS -sdk iphonesimulator
-- xctool test -project Makeup.xcodeproj -scheme Makeup-iOS -sdk iphonesimulator
-- xctool clean build -project Makeup.xcodeproj -scheme Makeup-Mac -sdk macosx
-- xctool test -project Makeup.xcodeproj -scheme Makeup-Mac -sdk macosx
+- xctool clean build -project Fashion.xcodeproj -scheme Fashion-iOS -sdk iphonesimulator
+- xctool test -project Fashion.xcodeproj -scheme Fashion-iOS -sdk iphonesimulator
+- xctool clean build -project Fashion.xcodeproj -scheme Fashion-Mac -sdk macosx
+- xctool test -project Fashion.xcodeproj -scheme Fashion-Mac -sdk macosx
