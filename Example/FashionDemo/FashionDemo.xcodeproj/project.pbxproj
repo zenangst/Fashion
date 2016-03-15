@@ -36,7 +36,7 @@
 		D5C7F7371C3BC9CE008CDDBA = {
 			isa = PBXGroup;
 			children = (
-				D5C7F7421C3BC9CE008CDDBA /* MakeupDemo */,
+				D5C7F7421C3BC9CE008CDDBA /* FashionDemo */,
 				D5C7F7411C3BC9CE008CDDBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,14 +49,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D5C7F7421C3BC9CE008CDDBA /* MakeupDemo */ = {
+		D5C7F7421C3BC9CE008CDDBA /* FashionDemo */ = {
 			isa = PBXGroup;
 			children = (
 				D5C7F7561C3BCA1E008CDDBA /* Resources */,
 				D5C7F7581C3BCA1E008CDDBA /* Sources */,
 				D5C7F7551C3BC9EA008CDDBA /* Supporting Files */,
 			);
-			path = MakeupDemo;
+			path = FashionDemo;
 			sourceTree = "<group>";
 		};
 		D5C7F7551C3BC9EA008CDDBA /* Supporting Files */ = {
@@ -101,7 +101,7 @@
 			dependencies = (
 			);
 			name = FashionDemo;
-			productName = MakeupDemo;
+			productName = FashionDemo;
 			productReference = D5C7F7401C3BC9CE008CDDBA /* FashionDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
