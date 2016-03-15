@@ -1,6 +1,6 @@
 import Quick
 import Nimble
-@testable import Makeup
+@testable import Fashion
 
 class StyleableSpec: QuickSpec {
 

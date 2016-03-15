@@ -1,6 +1,6 @@
-// Makeup Mac Playground
+// Fashion Mac Playground
 
 import Cocoa
-import Makeup
+import Fashion
 
 var str = "Hello, playground"

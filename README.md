@@ -1,14 +1,14 @@
-![Makeup](https://github.com/vadymmarkov/Makeup/blob/master/Resources/MakeupPresentation.png)
+![Fashion](https://github.com/vadymmarkov/Fashion/blob/master/Resources/FashionPresentation.png)
 
-[![CI Status](http://img.shields.io/travis/vadymmarkov/Makeup.svg?style=flat)](https://travis-ci.org/vadymmarkov/Makeup)
-[![Version](https://img.shields.io/cocoapods/v/Makeup.svg?style=flat)](http://cocoadocs.org/docsets/Makeup)
+[![CI Status](http://img.shields.io/travis/vadymmarkov/Fashion.svg?style=flat)](https://travis-ci.org/vadymmarkov/Fashion)
+[![Version](https://img.shields.io/cocoapods/v/Fashion.svg?style=flat)](http://cocoadocs.org/docsets/Fashion)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![License](https://img.shields.io/cocoapods/l/Makeup.svg?style=flat)](http://cocoadocs.org/docsets/Makeup)
-[![Platform](https://img.shields.io/cocoapods/p/Makeup.svg?style=flat)](http://cocoadocs.org/docsets/Makeup)
+[![License](https://img.shields.io/cocoapods/l/Fashion.svg?style=flat)](http://cocoadocs.org/docsets/Fashion)
+[![Platform](https://img.shields.io/cocoapods/p/Fashion.svg?style=flat)](http://cocoadocs.org/docsets/Fashion)
 
 ## Description
 
-**Makeup** is your helper to share and reuse UI styles in a Swift way. The
+**Fashion** is your helper to share and reuse UI styles in a Swift way. The
 main goal is not to style your native apps in CSS, but use a set of convenience
 helper functions to decouple your styles from a layout code. Also here we try to
 go beyond the `UIAppearance` possibilities to customize appearance for all
@@ -44,7 +44,7 @@ struct MainStylesheet: Stylesheet {
   }
 }
 
-Makeup.register([MainStylesheet()])
+Fashion.register([MainStylesheet()])
 
 //...
 let button = UIButton()
@@ -74,18 +74,18 @@ Vadym Markov, markov.vadym@gmail.com
 
 ## Installation
 
-**Makeup** is available through [CocoaPods](http://cocoapods.org). To install
+**Fashion** is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Makeup'
+pod 'Fashion'
 ```
 
-**Makeup** is also available through [Carthage](https://github.com/Carthage/Carthage).
+**Fashion** is also available through [Carthage](https://github.com/Carthage/Carthage).
 To install just write into your Cartfile:
 
 ```ruby
-github "vadymmarkov/Makeup"
+github "vadymmarkov/Fashion"
 ```
 
 ## Author
@@ -94,8 +94,8 @@ Vadym Markov, markov.vadym@gmail.com
 
 ## Contributing
 
-We would love you to contribute to **Makeup**, check the [CONTRIBUTING](https://github.com/vadymmarkov/Makeup/blob/master/CONTRIBUTING.md) file for more info.
+We would love you to contribute to **Fashion**, check the [CONTRIBUTING](https://github.com/vadymmarkov/Fashion/blob/master/CONTRIBUTING.md) file for more info.
 
 ## License
 
-**Makeup** is available under the MIT license. See the [LICENSE](https://github.com/vadymmarkov/Makeup/blob/master/LICENSE.md) file for more info.
+**Fashion** is available under the MIT license. See the [LICENSE](https://github.com/vadymmarkov/Fashion/blob/master/LICENSE.md) file for more info.

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-               BuildableName = "Makeup.framework"
-               BlueprintName = "Makeup-iOS"
-               ReferencedContainer = "container:Makeup.xcodeproj">
+               BuildableName = "Fashion.framework"
+               BlueprintName = "Fashion-iOS"
+               ReferencedContainer = "container:Fashion.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D5B2E8A81C3A780C00C0327D"
-               BuildableName = "Makeup-iOS-Tests.xctest"
-               BlueprintName = "Makeup-iOS-Tests"
-               ReferencedContainer = "container:Makeup.xcodeproj">
+               BuildableName = "Fashion.xctest"
+               BlueprintName = "Fashion-iOS-Tests"
+               ReferencedContainer = "container:Fashion.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-            BuildableName = "Makeup.framework"
-            BlueprintName = "Makeup-iOS"
-            ReferencedContainer = "container:Makeup.xcodeproj">
+            BuildableName = "Fashion.framework"
+            BlueprintName = "Fashion-iOS"
+            ReferencedContainer = "container:Fashion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-            BuildableName = "Makeup.framework"
-            BlueprintName = "Makeup-iOS"
-            ReferencedContainer = "container:Makeup.xcodeproj">
+            BuildableName = "Fashion.framework"
+            BlueprintName = "Fashion-iOS"
+            ReferencedContainer = "container:Fashion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-            BuildableName = "Makeup.framework"
-            BlueprintName = "Makeup-iOS"
-            ReferencedContainer = "container:Makeup.xcodeproj">
+            BuildableName = "Fashion.framework"
+            BlueprintName = "Fashion-iOS"
+            ReferencedContainer = "container:Fashion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

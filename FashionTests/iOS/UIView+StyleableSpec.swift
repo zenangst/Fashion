@@ -1,11 +1,11 @@
 import Quick
 import Nimble
-@testable import Makeup
+@testable import Fashion
 
-class UIViewMakeupSpec: QuickSpec {
+class UIViewStyleableSpec: QuickSpec {
 
   override func spec() {
-    describe("UIView+Makeup") {
+    describe("UIView+Styleable") {
       var label: UILabel!
 
       beforeEach {

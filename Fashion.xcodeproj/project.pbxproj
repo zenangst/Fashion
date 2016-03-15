@@ -14,23 +14,23 @@
 		D52158711C94A444004EE4BE /* Stylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521586F1C94A444004EE4BE /* Stylist.swift */; };
 		D52158741C95B117004EE4BE /* StyleManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158731C95B117004EE4BE /* StyleManaging.swift */; };
 		D52158751C95B117004EE4BE /* StyleManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158731C95B117004EE4BE /* StyleManaging.swift */; };
-		D52158771C95B369004EE4BE /* Makeup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158761C95B369004EE4BE /* Makeup.swift */; };
-		D52158781C95B369004EE4BE /* Makeup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158761C95B369004EE4BE /* Makeup.swift */; };
+		D52158771C95B369004EE4BE /* Fashion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158761C95B369004EE4BE /* Fashion.swift */; };
+		D52158781C95B369004EE4BE /* Fashion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158761C95B369004EE4BE /* Fashion.swift */; };
 		D521588D1C95CBFC004EE4BE /* Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521588C1C95CBFC004EE4BE /* Styleable.swift */; };
 		D521588E1C95CBFC004EE4BE /* Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521588C1C95CBFC004EE4BE /* Styleable.swift */; };
-		D54B58031C95DB4D0029F7BC /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B57EE1C95DB2E0029F7BC /* TestHelpers.swift */; };
-		D54B58041C95DB4D0029F7BC /* MakeupSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B57EF1C95DB2E0029F7BC /* MakeupSpec.swift */; };
-		D54B58051C95DB4D0029F7BC /* StyleableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B57F01C95DB2E0029F7BC /* StyleableSpec.swift */; };
-		D54B58061C95DB4D0029F7BC /* StylesheetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B57F11C95DB2E0029F7BC /* StylesheetSpec.swift */; };
-		D54B58071C95DB4D0029F7BC /* StyleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B57F21C95DB2E0029F7BC /* StyleSpec.swift */; };
-		D54B58081C95DB4D0029F7BC /* StylistSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B57F31C95DB2E0029F7BC /* StylistSpec.swift */; };
-		D54B58091C95DB4D0029F7BC /* UIView+StyleableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629931C3A8BDA007F7B7C /* UIView+StyleableSpec.swift */; };
-		D54B580A1C95DB4D0029F7BC /* Stylesheet+UIAppearanceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158951C95CF42004EE4BE /* Stylesheet+UIAppearanceSpec.swift */; };
 		D54B580D1C95DCA80029F7BC /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54B580C1C95DCA80029F7BC /* Sugar.framework */; };
 		D54B580F1C95DCF90029F7BC /* UIView+SharedStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B580E1C95DCF90029F7BC /* UIView+SharedStyles.swift */; };
-		D54B58141C95F0D00029F7BC /* UIView+SharedStylesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B58131C95F0D00029F7BC /* UIView+SharedStylesSpec.swift */; };
-		D5B2E8AA1C3A780C00C0327D /* Makeup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Makeup.framework */; };
-		D5C6294A1C3A7FAA007F7B7C /* Makeup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Makeup.framework */; };
+		D5A516D71C98127E00B5442D /* FashionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CB1C98127E00B5442D /* FashionSpec.swift */; };
+		D5A516D81C98127E00B5442D /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CD1C98127E00B5442D /* TestHelpers.swift */; };
+		D5A516D91C98127E00B5442D /* StyleableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CE1C98127E00B5442D /* StyleableSpec.swift */; };
+		D5A516DA1C98127E00B5442D /* Stylesheet+UIAppearanceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CF1C98127E00B5442D /* Stylesheet+UIAppearanceSpec.swift */; };
+		D5A516DB1C98127E00B5442D /* StylesheetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D01C98127E00B5442D /* StylesheetSpec.swift */; };
+		D5A516DC1C98127E00B5442D /* StyleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D11C98127E00B5442D /* StyleSpec.swift */; };
+		D5A516DD1C98127E00B5442D /* StylistSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D21C98127E00B5442D /* StylistSpec.swift */; };
+		D5A516DE1C98127E00B5442D /* UIView+SharedStylesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D31C98127E00B5442D /* UIView+SharedStylesSpec.swift */; };
+		D5A516DF1C98127E00B5442D /* UIView+StyleableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D41C98127E00B5442D /* UIView+StyleableSpec.swift */; };
+		D5B2E8AA1C3A780C00C0327D /* Fashion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Fashion.framework */; };
+		D5C6294A1C3A7FAA007F7B7C /* Fashion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Fashion.framework */; };
 		D5C629771C3A878E007F7B7C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629751C3A878E007F7B7C /* Quick.framework */; };
 		D5C629781C3A878E007F7B7C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629761C3A878E007F7B7C /* Nimble.framework */; };
 		D5C6297B1C3A879F007F7B7C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629791C3A879F007F7B7C /* Quick.framework */; };
@@ -65,22 +65,27 @@
 		D521586D1C949EF5004EE4BE /* Stylesheet+UIAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stylesheet+UIAppearance.swift"; sourceTree = "<group>"; };
 		D521586F1C94A444004EE4BE /* Stylist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylist.swift; sourceTree = "<group>"; };
 		D52158731C95B117004EE4BE /* StyleManaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManaging.swift; sourceTree = "<group>"; };
-		D52158761C95B369004EE4BE /* Makeup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Makeup.swift; sourceTree = "<group>"; };
+		D52158761C95B369004EE4BE /* Fashion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fashion.swift; sourceTree = "<group>"; };
 		D521588C1C95CBFC004EE4BE /* Styleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styleable.swift; sourceTree = "<group>"; };
-		D52158951C95CF42004EE4BE /* Stylesheet+UIAppearanceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stylesheet+UIAppearanceSpec.swift"; sourceTree = "<group>"; };
-		D54B57EE1C95DB2E0029F7BC /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
-		D54B57EF1C95DB2E0029F7BC /* MakeupSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeupSpec.swift; sourceTree = "<group>"; };
-		D54B57F01C95DB2E0029F7BC /* StyleableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleableSpec.swift; sourceTree = "<group>"; };
-		D54B57F11C95DB2E0029F7BC /* StylesheetSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylesheetSpec.swift; sourceTree = "<group>"; };
-		D54B57F21C95DB2E0029F7BC /* StyleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleSpec.swift; sourceTree = "<group>"; };
-		D54B57F31C95DB2E0029F7BC /* StylistSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylistSpec.swift; sourceTree = "<group>"; };
 		D54B580C1C95DCA80029F7BC /* Sugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sugar.framework; path = Carthage/Build/iOS/Sugar.framework; sourceTree = "<group>"; };
 		D54B580E1C95DCF90029F7BC /* UIView+SharedStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SharedStyles.swift"; sourceTree = "<group>"; };
-		D54B58131C95F0D00029F7BC /* UIView+SharedStylesSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SharedStylesSpec.swift"; sourceTree = "<group>"; };
-		D5B2E89F1C3A780C00C0327D /* Makeup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Makeup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5B2E8A91C3A780C00C0327D /* Makeup-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Makeup-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5C629401C3A7FAA007F7B7C /* Makeup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Makeup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5C629491C3A7FAA007F7B7C /* Makeup-Mac-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Makeup-Mac-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A516C31C98125100B5442D /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		D5A516C41C98125100B5442D /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
+		D5A516C81C98127E00B5442D /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		D5A516C91C98127E00B5442D /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
+		D5A516CB1C98127E00B5442D /* FashionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FashionSpec.swift; sourceTree = "<group>"; };
+		D5A516CD1C98127E00B5442D /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		D5A516CE1C98127E00B5442D /* StyleableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleableSpec.swift; sourceTree = "<group>"; };
+		D5A516CF1C98127E00B5442D /* Stylesheet+UIAppearanceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Stylesheet+UIAppearanceSpec.swift"; sourceTree = "<group>"; };
+		D5A516D01C98127E00B5442D /* StylesheetSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylesheetSpec.swift; sourceTree = "<group>"; };
+		D5A516D11C98127E00B5442D /* StyleSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleSpec.swift; sourceTree = "<group>"; };
+		D5A516D21C98127E00B5442D /* StylistSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylistSpec.swift; sourceTree = "<group>"; };
+		D5A516D31C98127E00B5442D /* UIView+SharedStylesSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SharedStylesSpec.swift"; sourceTree = "<group>"; };
+		D5A516D41C98127E00B5442D /* UIView+StyleableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+StyleableSpec.swift"; sourceTree = "<group>"; };
+		D5B2E89F1C3A780C00C0327D /* Fashion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fashion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B2E8A91C3A780C00C0327D /* Fashion-Tests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fashion-Tests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C629401C3A7FAA007F7B7C /* Fashion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fashion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C629491C3A7FAA007F7B7C /* Fashion-Tests-Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fashion-Tests-Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C629751C3A878E007F7B7C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		D5C629761C3A878E007F7B7C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		D5C629791C3A879F007F7B7C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
@@ -88,11 +93,6 @@
 		D5C629821C3A892A007F7B7C /* UIView+Styleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Styleable.swift"; sourceTree = "<group>"; };
 		D5C629841C3A893F007F7B7C /* NSView+Makeup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Makeup.swift"; sourceTree = "<group>"; };
 		D5C629861C3A89A8007F7B7C /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
-		D5C6298B1C3A8BBD007F7B7C /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		D5C6298C1C3A8BBD007F7B7C /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
-		D5C629901C3A8BDA007F7B7C /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		D5C629911C3A8BDA007F7B7C /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
-		D5C629931C3A8BDA007F7B7C /* UIView+StyleableSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+StyleableSpec.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 			files = (
 				D5C629771C3A878E007F7B7C /* Quick.framework in Frameworks */,
 				D5C629781C3A878E007F7B7C /* Nimble.framework in Frameworks */,
-				D5B2E8AA1C3A780C00C0327D /* Makeup.framework in Frameworks */,
+				D5B2E8AA1C3A780C00C0327D /* Fashion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +127,7 @@
 			files = (
 				D5C6297B1C3A879F007F7B7C /* Quick.framework in Frameworks */,
 				D5C6297C1C3A879F007F7B7C /* Nimble.framework in Frameworks */,
-				D5C6294A1C3A7FAA007F7B7C /* Makeup.framework in Frameworks */,
+				D5C6294A1C3A7FAA007F7B7C /* Fashion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,21 +146,55 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D521587C1C95B904004EE4BE /* Supporting Files */ = {
+		D5A516C21C98125100B5442D /* Fashion */ = {
 			isa = PBXGroup;
 			children = (
-				D5C629901C3A8BDA007F7B7C /* Info-iOS.plist */,
-				D5C629911C3A8BDA007F7B7C /* Info-Mac.plist */,
+				D5A516C31C98125100B5442D /* Info-iOS.plist */,
+				D5A516C41C98125100B5442D /* Info-Mac.plist */,
 			);
-			name = "Supporting Files";
+			path = Fashion;
 			sourceTree = "<group>";
 		};
-		D54B57ED1C95DB2E0029F7BC /* Helpers */ = {
+		D5A516C71C98127E00B5442D /* FashionTests */ = {
 			isa = PBXGroup;
 			children = (
-				D54B57EE1C95DB2E0029F7BC /* TestHelpers.swift */,
+				D5A516E01C98129500B5442D /* Supporting Files */,
+				D5A516CA1C98127E00B5442D /* iOS */,
+			);
+			path = FashionTests;
+			sourceTree = "<group>";
+		};
+		D5A516CA1C98127E00B5442D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D5A516CC1C98127E00B5442D /* Helpers */,
+				D5A516CB1C98127E00B5442D /* FashionSpec.swift */,
+				D5A516CE1C98127E00B5442D /* StyleableSpec.swift */,
+				D5A516CF1C98127E00B5442D /* Stylesheet+UIAppearanceSpec.swift */,
+				D5A516D01C98127E00B5442D /* StylesheetSpec.swift */,
+				D5A516D11C98127E00B5442D /* StyleSpec.swift */,
+				D5A516D21C98127E00B5442D /* StylistSpec.swift */,
+				D5A516D31C98127E00B5442D /* UIView+SharedStylesSpec.swift */,
+				D5A516D41C98127E00B5442D /* UIView+StyleableSpec.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D5A516CC1C98127E00B5442D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D5A516CD1C98127E00B5442D /* TestHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D5A516E01C98129500B5442D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5A516C81C98127E00B5442D /* Info-iOS.plist */,
+				D5A516C91C98127E00B5442D /* Info-Mac.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D5B2E8951C3A780C00C0327D = {
@@ -169,8 +203,8 @@
 				D500FD111C3AABED00782D78 /* Playground-iOS.playground */,
 				D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */,
 				D5C629691C3A809D007F7B7C /* Sources */,
-				D5C6295C1C3A800E007F7B7C /* Makeup */,
-				D5C6298F1C3A8BDA007F7B7C /* MakeupTests */,
+				D5A516C21C98125100B5442D /* Fashion */,
+				D5A516C71C98127E00B5442D /* FashionTests */,
 				D52158721C95B0AE004EE4BE /* Frameworks */,
 				D5B2E8A01C3A780C00C0327D /* Products */,
 			);
@@ -179,21 +213,12 @@
 		D5B2E8A01C3A780C00C0327D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5B2E89F1C3A780C00C0327D /* Makeup.framework */,
-				D5B2E8A91C3A780C00C0327D /* Makeup-iOS-Tests.xctest */,
-				D5C629401C3A7FAA007F7B7C /* Makeup.framework */,
-				D5C629491C3A7FAA007F7B7C /* Makeup-Mac-Tests.xctest */,
+				D5B2E89F1C3A780C00C0327D /* Fashion.framework */,
+				D5B2E8A91C3A780C00C0327D /* Fashion-Tests-iOS.xctest */,
+				D5C629401C3A7FAA007F7B7C /* Fashion.framework */,
+				D5C629491C3A7FAA007F7B7C /* Fashion-Tests-Mac.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D5C6295C1C3A800E007F7B7C /* Makeup */ = {
-			isa = PBXGroup;
-			children = (
-				D5C6298B1C3A8BBD007F7B7C /* Info-iOS.plist */,
-				D5C6298C1C3A8BBD007F7B7C /* Info-Mac.plist */,
-			);
-			path = Makeup;
 			sourceTree = "<group>";
 		};
 		D5C629691C3A809D007F7B7C /* Sources */ = {
@@ -232,34 +257,9 @@
 				D52158731C95B117004EE4BE /* StyleManaging.swift */,
 				D52158671C948CE2004EE4BE /* Stylesheet.swift */,
 				D521586F1C94A444004EE4BE /* Stylist.swift */,
-				D52158761C95B369004EE4BE /* Makeup.swift */,
+				D52158761C95B369004EE4BE /* Fashion.swift */,
 			);
 			path = Shared;
-			sourceTree = "<group>";
-		};
-		D5C6298F1C3A8BDA007F7B7C /* MakeupTests */ = {
-			isa = PBXGroup;
-			children = (
-				D521587C1C95B904004EE4BE /* Supporting Files */,
-				D5C629921C3A8BDA007F7B7C /* iOS */,
-			);
-			path = MakeupTests;
-			sourceTree = "<group>";
-		};
-		D5C629921C3A8BDA007F7B7C /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D54B57ED1C95DB2E0029F7BC /* Helpers */,
-				D5C629931C3A8BDA007F7B7C /* UIView+StyleableSpec.swift */,
-				D54B58131C95F0D00029F7BC /* UIView+SharedStylesSpec.swift */,
-				D52158951C95CF42004EE4BE /* Stylesheet+UIAppearanceSpec.swift */,
-				D54B57F01C95DB2E0029F7BC /* StyleableSpec.swift */,
-				D54B57F21C95DB2E0029F7BC /* StyleSpec.swift */,
-				D54B57F11C95DB2E0029F7BC /* StylesheetSpec.swift */,
-				D54B57F31C95DB2E0029F7BC /* StylistSpec.swift */,
-				D54B57EF1C95DB2E0029F7BC /* MakeupSpec.swift */,
-			);
-			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,9 +282,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D5B2E89E1C3A780C00C0327D /* Makeup-iOS */ = {
+		D5B2E89E1C3A780C00C0327D /* Fashion-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5B2E8B31C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Makeup-iOS" */;
+			buildConfigurationList = D5B2E8B31C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Fashion-iOS" */;
 			buildPhases = (
 				D5B2E89A1C3A780C00C0327D /* Sources */,
 				D5B2E89B1C3A780C00C0327D /* Frameworks */,
@@ -296,14 +296,14 @@
 			);
 			dependencies = (
 			);
-			name = "Makeup-iOS";
+			name = "Fashion-iOS";
 			productName = Makeup;
-			productReference = D5B2E89F1C3A780C00C0327D /* Makeup.framework */;
+			productReference = D5B2E89F1C3A780C00C0327D /* Fashion.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D5B2E8A81C3A780C00C0327D /* Makeup-iOS-Tests */ = {
+		D5B2E8A81C3A780C00C0327D /* Fashion-iOS-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5B2E8B61C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Makeup-iOS-Tests" */;
+			buildConfigurationList = D5B2E8B61C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Fashion-iOS-Tests" */;
 			buildPhases = (
 				D5B2E8A51C3A780C00C0327D /* Sources */,
 				D5B2E8A61C3A780C00C0327D /* Frameworks */,
@@ -315,14 +315,14 @@
 			dependencies = (
 				D5B2E8AC1C3A780C00C0327D /* PBXTargetDependency */,
 			);
-			name = "Makeup-iOS-Tests";
+			name = "Fashion-iOS-Tests";
 			productName = MakeupTests;
-			productReference = D5B2E8A91C3A780C00C0327D /* Makeup-iOS-Tests.xctest */;
+			productReference = D5B2E8A91C3A780C00C0327D /* Fashion-Tests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D5C6293F1C3A7FAA007F7B7C /* Makeup-Mac */ = {
+		D5C6293F1C3A7FAA007F7B7C /* Fashion-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5C629511C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Makeup-Mac" */;
+			buildConfigurationList = D5C629511C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Fashion-Mac" */;
 			buildPhases = (
 				D5C6293B1C3A7FAA007F7B7C /* Sources */,
 				D5C6293C1C3A7FAA007F7B7C /* Frameworks */,
@@ -333,14 +333,14 @@
 			);
 			dependencies = (
 			);
-			name = "Makeup-Mac";
+			name = "Fashion-Mac";
 			productName = "Makeup-Mac";
-			productReference = D5C629401C3A7FAA007F7B7C /* Makeup.framework */;
+			productReference = D5C629401C3A7FAA007F7B7C /* Fashion.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D5C629481C3A7FAA007F7B7C /* Makeup-Mac-Tests */ = {
+		D5C629481C3A7FAA007F7B7C /* Fashion-Mac-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Makeup-Mac-Tests" */;
+			buildConfigurationList = D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Fashion-Mac-Tests" */;
 			buildPhases = (
 				D5C629451C3A7FAA007F7B7C /* Sources */,
 				D5C629461C3A7FAA007F7B7C /* Frameworks */,
@@ -352,9 +352,9 @@
 			dependencies = (
 				D5C6294C1C3A7FAA007F7B7C /* PBXTargetDependency */,
 			);
-			name = "Makeup-Mac-Tests";
+			name = "Fashion-Mac-Tests";
 			productName = "Makeup-MacTests";
-			productReference = D5C629491C3A7FAA007F7B7C /* Makeup-Mac-Tests.xctest */;
+			productReference = D5C629491C3A7FAA007F7B7C /* Fashion-Tests-Mac.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -381,7 +381,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D5B2E8991C3A780C00C0327D /* Build configuration list for PBXProject "Makeup" */;
+			buildConfigurationList = D5B2E8991C3A780C00C0327D /* Build configuration list for PBXProject "Fashion" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -393,10 +393,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5B2E89E1C3A780C00C0327D /* Makeup-iOS */,
-				D5C6293F1C3A7FAA007F7B7C /* Makeup-Mac */,
-				D5B2E8A81C3A780C00C0327D /* Makeup-iOS-Tests */,
-				D5C629481C3A7FAA007F7B7C /* Makeup-Mac-Tests */,
+				D5B2E89E1C3A780C00C0327D /* Fashion-iOS */,
+				D5C6293F1C3A7FAA007F7B7C /* Fashion-Mac */,
+				D5B2E8A81C3A780C00C0327D /* Fashion-iOS-Tests */,
+				D5C629481C3A7FAA007F7B7C /* Fashion-Mac-Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -491,7 +491,7 @@
 				D5C629871C3A89A8007F7B7C /* Style.swift in Sources */,
 				D52158701C94A444004EE4BE /* Stylist.swift in Sources */,
 				D52158741C95B117004EE4BE /* StyleManaging.swift in Sources */,
-				D52158771C95B369004EE4BE /* Makeup.swift in Sources */,
+				D52158771C95B369004EE4BE /* Fashion.swift in Sources */,
 				D54B580F1C95DCF90029F7BC /* UIView+SharedStyles.swift in Sources */,
 				D52158681C948CE2004EE4BE /* Stylesheet.swift in Sources */,
 				D521586E1C949EF5004EE4BE /* Stylesheet+UIAppearance.swift in Sources */,
@@ -503,15 +503,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D54B58061C95DB4D0029F7BC /* StylesheetSpec.swift in Sources */,
-				D54B58091C95DB4D0029F7BC /* UIView+StyleableSpec.swift in Sources */,
-				D54B58031C95DB4D0029F7BC /* TestHelpers.swift in Sources */,
-				D54B58041C95DB4D0029F7BC /* MakeupSpec.swift in Sources */,
-				D54B580A1C95DB4D0029F7BC /* Stylesheet+UIAppearanceSpec.swift in Sources */,
-				D54B58141C95F0D00029F7BC /* UIView+SharedStylesSpec.swift in Sources */,
-				D54B58081C95DB4D0029F7BC /* StylistSpec.swift in Sources */,
-				D54B58071C95DB4D0029F7BC /* StyleSpec.swift in Sources */,
-				D54B58051C95DB4D0029F7BC /* StyleableSpec.swift in Sources */,
+				D5A516DD1C98127E00B5442D /* StylistSpec.swift in Sources */,
+				D5A516D71C98127E00B5442D /* FashionSpec.swift in Sources */,
+				D5A516DF1C98127E00B5442D /* UIView+StyleableSpec.swift in Sources */,
+				D5A516DE1C98127E00B5442D /* UIView+SharedStylesSpec.swift in Sources */,
+				D5A516DB1C98127E00B5442D /* StylesheetSpec.swift in Sources */,
+				D5A516D81C98127E00B5442D /* TestHelpers.swift in Sources */,
+				D5A516DA1C98127E00B5442D /* Stylesheet+UIAppearanceSpec.swift in Sources */,
+				D5A516DC1C98127E00B5442D /* StyleSpec.swift in Sources */,
+				D5A516D91C98127E00B5442D /* StyleableSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,7 +523,7 @@
 				D5C629851C3A893F007F7B7C /* NSView+Makeup.swift in Sources */,
 				D52158751C95B117004EE4BE /* StyleManaging.swift in Sources */,
 				D5C629881C3A89A8007F7B7C /* Style.swift in Sources */,
-				D52158781C95B369004EE4BE /* Makeup.swift in Sources */,
+				D52158781C95B369004EE4BE /* Fashion.swift in Sources */,
 				D52158691C948CE2004EE4BE /* Stylesheet.swift in Sources */,
 				D521588E1C95CBFC004EE4BE /* Styleable.swift in Sources */,
 			);
@@ -541,12 +541,12 @@
 /* Begin PBXTargetDependency section */
 		D5B2E8AC1C3A780C00C0327D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D5B2E89E1C3A780C00C0327D /* Makeup-iOS */;
+			target = D5B2E89E1C3A780C00C0327D /* Fashion-iOS */;
 			targetProxy = D5B2E8AB1C3A780C00C0327D /* PBXContainerItemProxy */;
 		};
 		D5C6294C1C3A7FAA007F7B7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D5C6293F1C3A7FAA007F7B7C /* Makeup-Mac */;
+			target = D5C6293F1C3A7FAA007F7B7C /* Fashion-Mac */;
 			targetProxy = D5C6294B1C3A7FAA007F7B7C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -653,12 +653,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Makeup/Info-iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Fashion/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Makeup-iOS";
-				PRODUCT_NAME = Makeup;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-iOS";
+				PRODUCT_NAME = Fashion;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -676,12 +676,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Makeup/Info-iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Fashion/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Makeup-iOS";
-				PRODUCT_NAME = Makeup;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-iOS";
+				PRODUCT_NAME = Fashion;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -694,10 +694,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/MakeupTests/Info-iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FashionTests/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.MakeupTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.FashionTests;
+				PRODUCT_NAME = "Fashion-Tests-iOS";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -710,10 +710,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/MakeupTests/Info-iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FashionTests/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.MakeupTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.FashionTests;
+				PRODUCT_NAME = "Fashion-Tests-iOS";
 			};
 			name = Release;
 		};
@@ -728,12 +728,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Makeup/Info-Mac.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Fashion/Info-Mac.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Makeup-Mac";
-				PRODUCT_NAME = Makeup;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-Mac";
+				PRODUCT_NAME = Fashion;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -751,12 +751,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Makeup/Info-Mac.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Fashion/Info-Mac.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Makeup-Mac";
-				PRODUCT_NAME = Makeup;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-Mac";
+				PRODUCT_NAME = Fashion;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -771,11 +771,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/MakeupTests/Info-Mac.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FashionTests/Info-Mac.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Makeup-MacTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Fashion-MacTests";
+				PRODUCT_NAME = "Fashion-Tests-Mac";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -789,11 +789,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/MakeupTests/Info-Mac.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FashionTests/Info-Mac.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Makeup-MacTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Fashion-MacTests";
+				PRODUCT_NAME = "Fashion-Tests-Mac";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -801,7 +801,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D5B2E8991C3A780C00C0327D /* Build configuration list for PBXProject "Makeup" */ = {
+		D5B2E8991C3A780C00C0327D /* Build configuration list for PBXProject "Fashion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5B2E8B11C3A780C00C0327D /* Debug */,
@@ -810,7 +810,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5B2E8B31C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Makeup-iOS" */ = {
+		D5B2E8B31C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Fashion-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5B2E8B41C3A780C00C0327D /* Debug */,
@@ -819,7 +819,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5B2E8B61C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Makeup-iOS-Tests" */ = {
+		D5B2E8B61C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Fashion-iOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5B2E8B71C3A780C00C0327D /* Debug */,
@@ -828,7 +828,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5C629511C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Makeup-Mac" */ = {
+		D5C629511C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Fashion-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5C629521C3A7FAA007F7B7C /* Debug */,
@@ -837,7 +837,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Makeup-Mac-Tests" */ = {
+		D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Fashion-Mac-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D5C629551C3A7FAA007F7B7C /* Debug */,

@@ -4,7 +4,7 @@ import Sugar
 extension UIView {
 
   private struct AssociatedKeys {
-    static var stylesApplied = "makeup_StylesAppliedAssociatedKey"
+    static var stylesApplied = "fashion_StylesAppliedAssociatedKey"
   }
 
   // MARK: - Method Swizzling
@@ -17,12 +17,12 @@ extension UIView {
     if self !== UIView.self { return }
 
     dispatch_once(&Static.token) {
-      Swizzler.swizzle("willMoveToSuperview:", cls: self, prefix: "makeup")
+      Swizzler.swizzle("willMoveToSuperview:", cls: self, prefix: "fashion")
     }
   }
 
-  func makeup_willMoveToSuperview(newSuperview: UIView?) {
-    makeup_willMoveToSuperview(newSuperview)
+  func fashion_willMoveToSuperview(newSuperview: UIView?) {
+    fashion_willMoveToSuperview(newSuperview)
 
     guard runtimeStyles else {
       return

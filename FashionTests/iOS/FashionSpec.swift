@@ -1,11 +1,11 @@
 import Quick
 import Nimble
-@testable import Makeup
+@testable import Fashion
 
-class MakeupSpec: QuickSpec {
+class FashionSpec: QuickSpec {
 
   override func spec() {
-    describe("Makeup") {
+    describe("Fashion") {
       let stylesheet = TestStylesheet()
 
       beforeEach {
@@ -15,7 +15,7 @@ class MakeupSpec: QuickSpec {
 
       describe("#register") {
         it("registers passed stylesheets") {
-          Makeup.register([stylesheet])
+          Fashion.register([stylesheet])
 
           expect(Stylist.master.styles[stylesheet.style]).toNot(beNil())
         }

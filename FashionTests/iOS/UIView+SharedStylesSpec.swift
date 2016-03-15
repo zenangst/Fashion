@@ -1,6 +1,6 @@
 import Quick
 import Nimble
-@testable import Makeup
+@testable import Fashion
 
 class UIViewSharedStylesSpec: QuickSpec {
 
@@ -9,7 +9,7 @@ class UIViewSharedStylesSpec: QuickSpec {
       beforeEach {
         Stylist.master.styles.removeAll()
         Stylist.master.sharedStyles.removeAll()
-        Makeup.runtimeStyles = true
+        Fashion.runtimeStyles = true
       }
 
       describe("#willMoveToSuperview:") {
@@ -74,7 +74,7 @@ class UIViewSharedStylesSpec: QuickSpec {
 
         context("with runtime styles disabled") {
           it("does not apply shared styles") {
-            Makeup.runtimeStyles = false
+            Fashion.runtimeStyles = false
 
             let label = UILabel()
             let view = UIView()

@@ -1,5 +1,5 @@
 import UIKit
-import Makeup
+import Fashion
 
 struct TestEmptyStylesheet: Stylesheet {
 

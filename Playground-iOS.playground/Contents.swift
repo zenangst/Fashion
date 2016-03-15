@@ -1,6 +1,6 @@
-// Makeup iOS Playground
+// Fashion iOS Playground
 
 import UIKit
-import Makeup
+import Fashion
 
 var str = "Hello, playground"
