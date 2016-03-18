@@ -60,7 +60,7 @@ class UIViewSharedStylesSpec: QuickSpec {
 
           it("does not override view-specific styles") {
             let label = UILabel()
-            label.style = "label-1"
+            label.styles = "label-1"
             let view = UIView()
 
             view.addSubview(label)

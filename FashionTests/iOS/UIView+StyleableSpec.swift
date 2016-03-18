@@ -28,6 +28,16 @@ class UIViewStyleableSpec: QuickSpec {
         }
       }
 
+      describe("#init:frame:styles") {
+        it("applies styles") {
+          label = UILabel(styles: "label-1 label-2")
+
+          expect(label.backgroundColor).to(equal(UIColor.yellowColor()))
+          expect(label.textColor).to(equal(UIColor.redColor()))
+          expect(label.numberOfLines).to(equal(3))
+        }
+      }
+
       describe("#stylize") {
         it("applies previously registered styles") {
           label.stylize("label-1", "label-2")
@@ -46,16 +56,16 @@ class UIViewStyleableSpec: QuickSpec {
         }
       }
 
-      describe("#style") {
+      describe("#styles") {
         it("returns a style that has been previously set") {
-          label.style = "label-1"
+          label.styles = "label-1"
 
-          expect(label.style).to(equal("label-1"))
+          expect(label.styles).to(equal("label-1"))
         }
 
         context("with a single style") {
           it("applies previously registered style") {
-            label.style = "label-1"
+            label.styles = "label-1"
 
             expect(label.backgroundColor).to(equal(UIColor.redColor()))
             expect(label.textColor).to(equal(UIColor.redColor()))
@@ -63,7 +73,7 @@ class UIViewStyleableSpec: QuickSpec {
           }
 
           it("does not apply not registered style") {
-            label.style = "label-3 label-4"
+            label.styles = "label-3 label-4"
 
             expect(label.backgroundColor).to(equal(UIColor.redColor()))
             expect(label.textColor).to(equal(UIColor.whiteColor()))
@@ -73,7 +83,7 @@ class UIViewStyleableSpec: QuickSpec {
 
         context("with multiple styles") {
           it("applies previously registered styles") {
-            label.style = "label-1 label-2"
+            label.styles = "label-1 label-2"
 
             expect(label.backgroundColor).to(equal(UIColor.yellowColor()))
             expect(label.textColor).to(equal(UIColor.redColor()))
@@ -81,7 +91,7 @@ class UIViewStyleableSpec: QuickSpec {
           }
 
           it("does not apply not registered styles") {
-            label.style = "label-3 label-4"
+            label.styles = "label-3 label-4"
 
             expect(label.backgroundColor).to(equal(UIColor.redColor()))
             expect(label.textColor).to(equal(UIColor.whiteColor()))
