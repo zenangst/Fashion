@@ -34,8 +34,8 @@ extension UIView {
 
     stylesApplied = true
 
-    if let style = style {
-      self.style = style
+    if let styles = styles {
+      self.styles = styles
     }
   }
 

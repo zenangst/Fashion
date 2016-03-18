@@ -6,13 +6,18 @@ extension UIView {
     static var Style = "fashion_StyleAssociatedKey"
   }
 
+  public convenience init(frame: CGRect = CGRectZero, styles: String) {
+    self.init(frame: frame)
+    self.styles = styles
+  }
+
   /**
    Applies previously registered styles.
 
    - Parameter styles: Set of style names.
    */
   public func stylize(styles: String...) {
-    style = styles.joinWithSeparator(" ")
+    self.styles = styles.joinWithSeparator(" ")
   }
 
   /**
@@ -27,7 +32,7 @@ extension UIView {
 
    - Parameter styles: Single style or multiple styles separated by whitespace.
    */
-  @IBInspectable public var style: String? {
+  @IBInspectable public var styles: String? {
     get {
       return objc_getAssociatedObject(self, &AssociatedKeys.Style) as? String
     }
