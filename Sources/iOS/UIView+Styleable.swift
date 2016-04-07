@@ -10,6 +10,11 @@ extension UIView {
     self.init(frame: frame)
     self.styles = styles
   }
+  
+  public convenience init(frame: CGRect = CGRectZero, styles: [CustomStringConvertible]) {
+    self.init(frame: frame)
+    stylize(styles)
+  }
 
   /**
    Applies previously registered styles.
@@ -18,6 +23,10 @@ extension UIView {
    */
   public func stylize(styles: String...) {
     self.styles = styles.joinWithSeparator(" ")
+  }
+  
+  public func stylize(styles: CustomStringConvertible...) {
+    self.styles = styles.map { String($0) } .joinWithSeparator(" ")
   }
 
   /**
