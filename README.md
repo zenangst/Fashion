@@ -108,6 +108,10 @@ unshare(UITableView.self)
 
 ### Stylist
 
+When you register/share your styles in the `Stylesheet` all the actual work is
+done by `Stylist`, so if you want more freedom it's possible to use `Stylist`
+class directly.
+
 ```swift
 ```
 
