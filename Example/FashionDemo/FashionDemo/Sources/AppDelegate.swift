@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    Fashion.register([MainStylesheet()])
+    
     window = UIWindow(frame: UIScreen.mainScreen().bounds)
     window?.rootViewController = navigationController
     window?.makeKeyAndVisible()

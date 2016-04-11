@@ -1,0 +1,17 @@
+PODS:
+  - Fashion (1.0.0):
+    - Sugar
+  - Sugar (1.0.13)
+
+DEPENDENCIES:
+  - Fashion (from `../../`)
+
+EXTERNAL SOURCES:
+  Fashion:
+    :path: ../../
+
+SPEC CHECKSUMS:
+  Fashion: 74b0ce0bb5f208f087491d0eb7d67b7beaf234fb
+  Sugar: ca8778ac9d076fba1366b889e6bc205f376465e4
+
+COCOAPODS: 0.39.0
