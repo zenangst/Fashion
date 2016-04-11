@@ -10,6 +10,10 @@ public class Stylist {
   var sharedStyles: [String: Stylization] = [:]
   var styles: [String: Stylization] = [:]
 
+  // MARK: - Initialization
+  
+  public init() {}
+  
   // MARK: - Stylization
 
   /**

@@ -30,6 +30,8 @@ instance objects of the specified type.
 
 ### Conventional way
 
+**Define styles in a stylesheet**
+
 ```swift
 struct MainStylesheet: Stylesheet {
 
@@ -38,17 +40,24 @@ struct MainStylesheet: Stylesheet {
       label.textColor = UIColor.blueColor()
     }
 
-    register("red-button") { (button: UIButton) in
+    register("custom-button") { (button: UIButton) in
       button.backgroundColor = UIColor.redColor()
+      button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
     }
   }
 }
+```
 
+**Register a stylesheet**
+```swift
 Fashion.register([MainStylesheet()])
+```
 
-//...
-let button = UIButton() // let button = UIButton(styles: "red-button")
-button.styles = "red-button" // backgroundColor => UIColor.redColor()
+**Apply a style**
+
+```swift
+let button = UIButton() // let button = UIButton(styles: "custom-button")
+button.styles = "custom-button" // backgroundColor => UIColor.redColor()
 
 let label = UILabel()
 addSubview(label) // textColor => UIColor.blueColor()
@@ -83,6 +92,7 @@ unregister("card-view")
 **Share a style**
 The style will be shared across all objects of this type, considering
 inheritance.
+
 ```swift
 // All views will have red background color.
 share { (view: UIView) in
@@ -109,10 +119,26 @@ unshare(UITableView.self)
 ### Stylist
 
 When you register/share your styles in the `Stylesheet` all the actual work is
-done by `Stylist`, so if you want more freedom it's possible to use `Stylist`
-class directly.
+done by `Stylist` under the hood, so if you want more freedom it's possible
+to use `Stylist` class directly. You can create a new instance `Stylist()` or
+use the global var `Stylist.master` which is used in stylesheets.
 
 ```swift
+let stylist = Stylist()
+
+stylist.register("card-view") { (view: UIView) in
+  view.backgroundColor = UIColor.whiteColor()
+  view.layer.cornerRadius = 8
+}
+
+stylist.unregister("card-view")
+
+stylist.share { (tableView: UITableView) in
+  tableView.backgroundColor = UIColor.whiteColor()
+  tableView.tableFooterView = UIView(frame: CGRect.zero)
+}
+
+stylist.unshare(UITableView.self)
 ```
 
 ### UIView extensions
