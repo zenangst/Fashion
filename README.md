@@ -91,7 +91,7 @@ unregister("card-view")
 
 **Share a style**
 The style will be shared across all objects of this type, considering
-inheritance.
+inheritance, so at first styles shared for all parent types will be applied.
 
 ```swift
 // All views will have red background color.
@@ -143,7 +143,58 @@ stylist.unshare(UITableView.self)
 
 ### UIView extensions
 
+It's super easy to apply previously registered styles with `UIView` extensions.
+
+**With convenience initializer**
 ```swift
+// A single style
+let button = UIButton(styles: "custom-button")
+
+// Multiple styles should be separated by a space
+let label = UILabel(styles: "content-view cool-label")
+```
+
+```swift
+// The initialized also accepts CustomStringConvertible, so something other
+// than String could also be used
+
+enum Style: String, CustomStringConvertible {
+  case CustomButton
+  case ContentView
+  case CoolLabel
+
+  var description: String {
+    return rawValue
+  }
+}
+
+// A single style
+let button = UIButton(styles: Style.CustomButton)
+
+// Multiple styles
+let label = UILabel(styles: [Style.ContentView, Style.CoolLabel])
+```
+
+**With `stylize` function**
+```swift
+let label = UILabel()
+
+// String
+label.stylize("content-view", "cool-label")
+
+// CustomStringConvertible
+label.stylize(Style.ContentView, Style.CoolLabel)
+```
+
+**With `@IBInspectable` property `styles`**
+```swift
+let button = UIButton()
+
+// A single style
+button.styles = "custom-button"
+
+// Multiple styles
+button.styles = "content-view custom-button"
 ```
 
 ## Author

@@ -15,6 +15,11 @@ extension UIView {
     self.init(frame: frame)
     stylize(styles)
   }
+  
+  public convenience init(frame: CGRect = CGRectZero, styles: CustomStringConvertible) {
+    self.init(frame: frame)
+    stylize(styles)
+  }
 
   /**
    Applies previously registered styles.
