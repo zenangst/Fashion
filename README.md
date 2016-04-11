@@ -116,6 +116,21 @@ share { (tableView: UITableView) in
 unshare(UITableView.self)
 ```
 
+**UIAppearance**
+
+`share` is the recommended method to customize the appearance of instances of a
+class, but sometimes we still have to use `UIAppearance` because of
+default styles set on the class’s appearance proxy when a view enters a window.
+
+```swift
+shareAppearance { (barButtonItem: UIBarButtonItem) in
+  barButtonItem.setTitleTextAttributes([
+    NSFontAttributeName : UIFont(name: "HelveticaNeue-Light", size: 12)!,
+    NSForegroundColorAttributeName : UIColor.redColor()],
+    forState: .Normal)
+}
+```
+
 ### Stylist
 
 When you register/share your styles in the `Stylesheet` all the actual work is
