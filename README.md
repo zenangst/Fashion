@@ -36,8 +36,34 @@ instance objects of the specified type.
 struct MainStylesheet: Stylesheet {
 
   func define() {
+    share { (navigationBar: UINavigationBar) in
+      navigationBar.translucent = false
+      navigationBar.barTintColor = UIColor.whiteColor()
+      navigationBar.tintColor = UIColor.blueColor()
+
+      navigationBar.titleTextAttributes = [
+        NSFontAttributeName : UIFont(name: "HelveticaNeue-Light", size: 14)!,
+        NSForegroundColorAttributeName : UIColor.blackColor()],
+      ]
+
+      navigationBar.shadowImage = UIImage(named: "shadowImage")
+      navigationBar.setBackgroundImage(UIImage(named: "navigationBackground"),
+        forBarMetrics: .Default)
+    }
+
     share { (label: UILabel) in
       label.textColor = UIColor.blueColor()
+      label.numberOfLines = 2
+      label.adjustsFontSizeToFitWidth = true
+    }
+
+    register("card-view") { (view: UIView) in
+      view.backgroundColor = UIColor.whiteColor()
+      view.layer.masksToBounds = false
+      view.layer.shadowColor = UIColor.blackColor().CGColor
+      view.layer.shadowOffset = CGSize(width: 0, height: 0.5)
+      view.layer.shadowOpacity = 0.2
+      view.layer.cornerRadius = 8
     }
 
     register("custom-button") { (button: UIButton) in
