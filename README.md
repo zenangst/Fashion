@@ -140,7 +140,7 @@ shareAppearance { (barButtonItem: UIBarButtonItem) in
 When you register/share your styles in the `Stylesheet` all the actual work is
 done by `Stylist` under the hood, so if you want more freedom it's possible
 to use `Stylist` class directly. You can create a new instance `Stylist()` or
-use the global var `Stylist.master` which is used in stylesheets.
+use the global variable `Stylist.master` which is used in stylesheets.
 
 ```swift
 let stylist = Stylist()
