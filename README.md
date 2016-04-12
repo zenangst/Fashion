@@ -103,7 +103,7 @@ share { (view: UIView) in
   view.backgroundColor = UIColor.redColor()
 }
 
-// All table views will have white background color, it overrides the white
+// All table views will have white background color, it overrides the red
 // background registered above.
 share { (tableView: UITableView) in
   tableView.backgroundColor = UIColor.whiteColor()
@@ -122,8 +122,8 @@ unshare(UITableView.self)
 
 **UIAppearance**
 
-`share` is the recommended method to customize the appearance of instances of a
-class, but sometimes we still have to use `UIAppearance` because of
+`share` is the recommended method to customize the appearance of class's
+instances, but sometimes we still have to use `UIAppearance` because of
 default styles set on the class’s appearance proxy when a view enters a window.
 
 ```swift
