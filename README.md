@@ -94,7 +94,7 @@ unregister("card-view")
 
 **Share a style**
 The style will be shared across all objects of this type, considering
-inheritance, so at first styles shared for all parent types will be applied.
+inheritance.
 
 ```swift
 // All views will have red background color.
@@ -174,7 +174,7 @@ let label = UILabel(styles: "content-view cool-label")
 
 ```swift
 // The initialized also accepts CustomStringConvertible, so something other
-// than String could also be used
+// than magic String could also be used
 
 enum Style: String, CustomStringConvertible {
   case CustomButton
