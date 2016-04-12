@@ -93,6 +93,7 @@ unregister("card-view")
 ```
 
 **Share a style**
+
 The style will be shared across all objects of this type, considering
 inheritance.
 
@@ -164,6 +165,7 @@ stylist.unshare(UITableView.self)
 It's super easy to apply previously registered styles with `UIView` extensions.
 
 **With convenience initializer**
+
 ```swift
 // A single style
 let button = UIButton(styles: "custom-button")
@@ -194,6 +196,7 @@ let label = UILabel(styles: [Style.ContentView, Style.CoolLabel])
 ```
 
 **With `stylize` function**
+
 ```swift
 let label = UILabel()
 
@@ -205,6 +208,7 @@ label.stylize(Style.ContentView, Style.CoolLabel)
 ```
 
 **With `@IBInspectable` property `styles`**
+
 ```swift
 let button = UIButton()
 
