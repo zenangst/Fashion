@@ -6,17 +6,12 @@ extension UIView {
     static var Style = "fashion_StyleAssociatedKey"
   }
 
-  public convenience init(frame: CGRect = CGRectZero, styles: String) {
+  public convenience init(frame: CGRect = CGRectZero, styles: [StringConvertible]) {
     self.init(frame: frame)
-    self.styles = styles
+    self.styles = styles.map { $0.string } .joinWithSeparator(" ")
   }
-  
-  public convenience init(frame: CGRect = CGRectZero, styles: [CustomStringConvertible]) {
-    self.init(frame: frame)
-    stylize(styles)
-  }
-  
-  public convenience init(frame: CGRect = CGRectZero, styles: CustomStringConvertible) {
+
+  public convenience init(frame: CGRect = CGRectZero, styles: StringConvertible) {
     self.init(frame: frame)
     stylize(styles)
   }
@@ -26,12 +21,9 @@ extension UIView {
 
    - Parameter styles: Set of style names.
    */
-  public func stylize(styles: String...) {
-    self.styles = styles.joinWithSeparator(" ")
-  }
-  
-  public func stylize(styles: CustomStringConvertible...) {
-    self.styles = styles.map { String($0) } .joinWithSeparator(" ")
+
+  public func stylize(styles: StringConvertible...) {
+    self.styles = styles.map { $0.string } .joinWithSeparator(" ")
   }
 
   /**

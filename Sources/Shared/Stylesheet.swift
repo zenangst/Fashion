@@ -18,7 +18,7 @@ public extension Stylesheet {
    - Parameter name: The name of the style you can apply to your view afterwards.
    - Parameter stylization: Closure where you can apply styles.
    */
-  public func register<T: Styleable>(name: String, stylization: T -> Void) {
+  public func register<T: Styleable>(name: StringConvertible, stylization: T -> Void) {
     Stylist.master.register(name, stylization: stylization)
   }
 
@@ -27,7 +27,7 @@ public extension Stylesheet {
 
    - Parameter name: The name of the style you want to unregister.
    */
-  public func unregister(name: String) {
+  public func unregister(name: StringConvertible) {
     Stylist.master.unregister(name)
   }
 
