@@ -11,9 +11,9 @@ public class Stylist {
   var styles: [String: Stylization] = [:]
 
   // MARK: - Initialization
-  
+
   public init() {}
-  
+
   // MARK: - Stylization
 
   /**
@@ -77,10 +77,10 @@ extension Stylist: StyleManaging {
    - Parameter name: The name of the style you can apply to your view afterwards.
    - Parameter stylization: Closure where you can apply styles.
    */
-  public func register<T: Styleable>(name: String, stylization: T -> Void) {
+  public func register<T: Styleable>(name: StringConvertible, stylization: T -> Void) {
     let style = Style(process: stylization)
 
-    styles[name] = style.applyTo
+    styles[name.string] = style.applyTo
   }
 
   /**
@@ -88,8 +88,8 @@ extension Stylist: StyleManaging {
 
    - Parameter name: The name of the style you want to unregister.
    */
-  public func unregister(name: String) {
-    styles.removeValueForKey(name)
+  public func unregister(name: StringConvertible) {
+    styles.removeValueForKey(name.string)
   }
 
   /**

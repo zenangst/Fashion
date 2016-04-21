@@ -39,6 +39,8 @@
 		D5C629851C3A893F007F7B7C /* NSView+Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629841C3A893F007F7B7C /* NSView+Styleable.swift */; };
 		D5C629871C3A89A8007F7B7C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629861C3A89A8007F7B7C /* Style.swift */; };
 		D5C629881C3A89A8007F7B7C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629861C3A89A8007F7B7C /* Style.swift */; };
+		D5F2E6A21CC98D5200D180B9 /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2E6A11CC98D5200D180B9 /* StringConvertible.swift */; };
+		D5F2E6A31CC98D5200D180B9 /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2E6A11CC98D5200D180B9 /* StringConvertible.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,7 @@
 		D5C629821C3A892A007F7B7C /* UIView+Styleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Styleable.swift"; sourceTree = "<group>"; };
 		D5C629841C3A893F007F7B7C /* NSView+Styleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Styleable.swift"; sourceTree = "<group>"; };
 		D5C629861C3A89A8007F7B7C /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		D5F2E6A11CC98D5200D180B9 /* StringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConvertible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +261,7 @@
 				D52158671C948CE2004EE4BE /* Stylesheet.swift */,
 				D521586F1C94A444004EE4BE /* Stylist.swift */,
 				D52158761C95B369004EE4BE /* Fashion.swift */,
+				D5F2E6A11CC98D5200D180B9 /* StringConvertible.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -491,6 +495,7 @@
 				D5C629871C3A89A8007F7B7C /* Style.swift in Sources */,
 				D52158701C94A444004EE4BE /* Stylist.swift in Sources */,
 				D52158741C95B117004EE4BE /* StyleManaging.swift in Sources */,
+				D5F2E6A21CC98D5200D180B9 /* StringConvertible.swift in Sources */,
 				D52158771C95B369004EE4BE /* Fashion.swift in Sources */,
 				D54B580F1C95DCF90029F7BC /* UIView+SharedStyles.swift in Sources */,
 				D52158681C948CE2004EE4BE /* Stylesheet.swift in Sources */,
@@ -525,6 +530,7 @@
 				D5C629881C3A89A8007F7B7C /* Style.swift in Sources */,
 				D52158781C95B369004EE4BE /* Fashion.swift in Sources */,
 				D52158691C948CE2004EE4BE /* Stylesheet.swift in Sources */,
+				D5F2E6A31CC98D5200D180B9 /* StringConvertible.swift in Sources */,
 				D521588E1C95CBFC004EE4BE /* Styleable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

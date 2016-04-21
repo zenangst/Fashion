@@ -34,6 +34,14 @@ type.
 **Define styles in a stylesheet**
 
 ```swift
+enum Style: String, StringConvertible {
+  case CustomButton
+
+  var string: String {
+    return rawValue
+  }
+}
+
 struct MainStylesheet: Stylesheet {
 
   func define() {
@@ -43,7 +51,8 @@ struct MainStylesheet: Stylesheet {
       label.adjustsFontSizeToFitWidth = true
     }
 
-    register("custom-button") { (button: UIButton) in
+    // register("custom-button") { (button: UIButton) in
+    register(Style.CustomButton) { (button: UIButton) in
       button.backgroundColor = UIColor.redColor()
       button.setTitleColor(UIColor.whiteColor(), forState: .Normal)
     }
@@ -60,7 +69,7 @@ Fashion.register([MainStylesheet()])
 
 ```swift
 let button = UIButton() // let button = UIButton(styles: "custom-button")
-button.styles = "custom-button" // backgroundColor => UIColor.redColor()
+button.stylize(Style.CustomButton) // backgroundColor => UIColor.redColor()
 
 let label = UILabel()
 addSubview(label) // textColor => UIColor.blueColor()
@@ -175,15 +184,15 @@ let label = UILabel(styles: "content-view cool-label")
 ```
 
 ```swift
-// The initialized also accepts CustomStringConvertible, so something other
+// The initialized also accepts StringConvertible, so something other
 // than magic String could also be used
 
-enum Style: String, CustomStringConvertible {
+enum Style: String, StringConvertible {
   case CustomButton
   case ContentView
   case CoolLabel
 
-  var description: String {
+  var string: String {
     return rawValue
   }
 }
@@ -200,11 +209,11 @@ let label = UILabel(styles: [Style.ContentView, Style.CoolLabel])
 ```swift
 let label = UILabel()
 
+// StringConvertible
+label.stylize(Style.ContentView, Style.CoolLabel)
+
 // String
 label.stylize("content-view", "cool-label")
-
-// CustomStringConvertible
-label.stylize(Style.ContentView, Style.CoolLabel)
 ```
 
 **With `@IBInspectable` property `styles`**
